@@ -1,3 +1,4 @@
+import java.lang.annotation.Target;
 import java.util.Scanner;
 
 import javax.sound.sampled.BooleanControl;
@@ -25,15 +26,22 @@ public class App {
         System.out.println("skriv en till nummer");
         int steg_fram = roblox.nextInt(); 
         roblox.nextLine();
-        System.out.println("skriv en text");
 
         String delString = text.substring(start, steg_fram);
         System.out.println(delString);
+
+        System.out.println("skriv en text");
 
         String textB = roblox.nextLine();
         boolean b = text.contains(textB);
         System.out.println(b);
 
-  
+        System.out.println("vilken text vill du byta ut");
+        String bytaText= roblox.nextLine();
+        System.out.println("vad vill du byta den till");
+        String bytaTextTill = roblox.nextLine();
+
+        String nytext = text.replace(bytaText, bytaTextTill);
+        System.out.println(nytext);
     }
 }
