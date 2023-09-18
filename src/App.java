@@ -1,4 +1,6 @@
 import java.util.Scanner;
+
+import javax.sound.sampled.BooleanControl;
 public class App {
     public static void main(String[] args) throws Exception {
     
@@ -21,11 +23,17 @@ public class App {
         System.out.println("skriv en nummer");
         int start =roblox.nextInt();
         System.out.println("skriv en till nummer");
-        int steg_fram = roblox.nextInt();
-
+        int steg_fram = roblox.nextInt(); 
+        roblox.nextLine();
+        System.out.println("skriv en text");
 
         String delString = text.substring(start, steg_fram);
         System.out.println(delString);
 
+        String textB = roblox.nextLine();
+        boolean b = text.contains(textB);
+        System.out.println(b);
+
+  
     }
 }
