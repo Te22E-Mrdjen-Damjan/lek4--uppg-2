@@ -17,5 +17,15 @@ public class App {
         System.out.println("\""+text+"\" har " +antal_bokstäver+ " bokstäver");
 
         System.out.println("bokstaven "+bokstav+ " är på plats " +(plats+1));
+
+        System.out.println("skriv en nummer");
+        int start =roblox.nextInt();
+        System.out.println("skriv en till nummer");
+        int steg_fram = roblox.nextInt();
+
+
+        String delString = text.substring(start, steg_fram);
+        System.out.println(delString);
+
     }
 }
